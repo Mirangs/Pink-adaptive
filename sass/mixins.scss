@@ -1,0 +1,36 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin container {
+  width: $mobile-width;
+  margin: 0 auto;
+
+  @media ($media-tablet-widths) {
+    width: $tablet-width;
+  }
+
+  @media ($media-desktop-widths) {
+    width: $desktop-width;
+  }
+}
+
+@mixin container-fluid {
+  width: auto;
+
+  @media ($media-tablet-widths) {
+    width: $fluid-width;
+    max-width: $max-fluid-width;
+    margin: 0 auto;
+  }
+}
+
+@mixin container-fixed {
+  width: $containter-fixed-width;
+  margin: 0 auto;
+}

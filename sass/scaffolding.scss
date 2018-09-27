@@ -1,0 +1,28 @@
+body {
+  font-size: $font-size-basic;
+  line-height: $line-height-basic;
+  font-family: $font-family-basic;
+  color: $basic-text-color;
+  font-style: $basic-font-style;
+
+  background-color: $basic-bg-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height : 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
