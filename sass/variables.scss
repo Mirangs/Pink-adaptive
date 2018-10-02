@@ -1,21 +1,23 @@
 
 //scaffolding.scss
 
-$font-size-basic: ;
-$line-height-basic: ;
-$font-family-basic: ;
-$basic-text-color: ;
-$basic-font-style: ;
-$basic-bg-color: ;
+$font-size-basic: 14px;
+$line-height-basic: 24px;
+$font-family-basic: OpenSans Light, Arial, sans-serif;
+$basic-text-color: #283645;
+$basic-font-style: normal;
+$basic-bg-color: #ffffff;
 
 //mixins.scss
 
-$media-tablet-widths: ;
-$media-desktop-widths: ;
+$media-tablet-widths: 660px;
+$media-desktop-widths: 960px;
 
-$mobile-width: ;
-$tablet-width: ;
-$desktop-width: ;
+$mobile-width: 320px;
+$tablet-width: 660px;
+$desktop-width: 960px;
 
-$fluid-width: ;
-$max-fluid-width: ;
+$fluid-width: auto;
+$max-fluid-width: 960px;
+
+$container-fixed-width: 0;

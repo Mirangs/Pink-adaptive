@@ -2,9 +2,59 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Приложение PINK - смотри на мир через розовые очки!</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <header class="main-header main-header--closed">
+    <div class="main-header__wrapper">
+      <div class="main-header__container">
+        <a class="page-header__logo">
+              <picture>
+                <source srcset="img/logo-desktop.svg" media="(min-width: 960px)">
+                <source srcset="img/logo-tablet.svg" media="(min-width: 660px)">
+                <img src="img/logo-mobile.svg" alt="Логотип PINK">
+              </picture>
+          </a>
+          <button class="page-header__toggle page-header__toggle--open" type="button">Открыть меню</button>
+      </div>
+      <nav class="main-nav main-nav--closed">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTMLAcademy</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+  </header>
 
+  <section class="download-app">
+    <h2 class="download-app__title">Взгляните на жизнь иначе!</h2>
+    <a class="download-app__btn" href="#">Скачать приложение</a>
+    <ul class="download-app__list">
+      <li class="download-app__item">
+        <a href="#" class="download-app__link download-app__apple">Apple</a>
+      </li>
+      <li class="download-app__item">
+        <a href="#" class="download-app__link download-app__android">Android</a>
+      </li>
+      <li class="download-app__item">
+        <a href="#" class="download-app__link download-app__microsoft">Microsoft</a>
+      </li>
+    </ul>
+    <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+  </section>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

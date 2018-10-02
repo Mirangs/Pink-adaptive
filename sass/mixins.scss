@@ -11,19 +11,20 @@
   width: $mobile-width;
   margin: 0 auto;
 
-  @media ($media-tablet-widths) {
+  @media (min-width: $media-tablet-widths) {
     width: $tablet-width;
   }
 
-  @media ($media-desktop-widths) {
+  @media (min-width: $media-desktop-widths) {
     width: $desktop-width;
   }
 }
 
 @mixin container-fluid {
   width: auto;
+  box-sizing: border-box;
 
-  @media ($media-tablet-widths) {
+  @media (min-width: $media-desktop-widths) {
     width: $fluid-width;
     max-width: $max-fluid-width;
     margin: 0 auto;
