@@ -1,0 +1,68 @@
+.offer-slogan {
+  background-color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-right: calc(100vw - 17px) solid #f2f2f2;
+    border-top: 8vw solid transparent;
+  }
+}
+
+.offer-slogan__title {
+  margin: 0;
+  padding: 0;
+  font-family: OpenSansLight, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  padding: 0 23%;
+
+  &--1 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $media-tablet-widths) {
+  .offer-slogan {
+    padding-top: 50px;
+    padding-bottom: 95px;
+  }
+
+  .offer-slogan__title {
+    padding: 0;
+    font-size: 40px;
+    line-height: 50px;
+
+    &--1 {
+      margin-bottom: 0;
+    }
+
+    &--2 {
+      padding: 0 25%;
+    }
+  }
+}
+
+@media (min-width: $media-desktop-widths) {
+  .offer-slogan {
+    padding-top: 69px;
+    padding-right: 36px;
+    padding-bottom: 165px;
+  }
+
+  .offer-slogan__title {
+    font-size: 50px;
+    line-height: 60px;
+
+    &--2 {
+      padding: 0 125px;
+    }
+  }
+}

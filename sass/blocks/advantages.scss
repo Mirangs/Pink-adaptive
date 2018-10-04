@@ -1,0 +1,181 @@
+.advantages {
+  background-color: #f2f2f2;
+  padding-top: 50px;
+  padding-bottom: 320px;
+
+  background-image: url("../../img/iphone-smile-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 475px;
+}
+
+.advantages__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.advantages__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 12px;
+  text-align: center;
+  font-family: OpenSansBold, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.advantages__description {
+  margin: 0;
+  font-family: OpenSans, Arial, sans-serif;
+  text-align: center;
+  margin-right: 5px;
+}
+
+@media (min-width: $media-tablet-widths) {
+  .advantages {
+    background-image: none;
+
+    padding-bottom: 0;
+    padding-top: 0;
+
+
+  }
+
+  .advantages__wrapper {
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 0;
+    padding-left: 310px;
+    width: 620px;
+    position: relative;
+
+  &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 20px;
+      top: -55px;
+      width: 268px;
+      height: 483px;
+      background-image: url("../../img/iphone-smile-tablet.png");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+
+    }
+  }
+
+  .advantages__list {
+    margin: 0 auto;
+    padding-bottom: 43px;
+    margin: 0;
+  }
+
+  .advantages__item {
+    margin-bottom: 35px;
+
+
+  }
+
+  .advantages__description {
+    padding-right: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .advantages__description br {
+    display: none;
+  }
+
+  .advantages__title {
+    text-align: left;
+  }
+}
+
+@media (min-width: $media-desktop-widths) {
+  .advantages__wrapper {
+    width: 960px;
+    padding: 0;
+    padding-top: 200px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .advantages__list {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    flex-basis: 294px;
+
+    position: relative;
+
+    padding-top: 60px;
+    margin-bottom: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -300px;
+      left: calc(50% - 147px);
+      width: 294px;
+      height: 300px;
+      z-index: 0;
+      background-repeat: no-repeat;
+      background-size: 294px auto, auto;
+      background-position: 0 292px, 54px 0;
+    }
+
+    &--grey::before {
+      background-image: url("../../img/advantages-shadow.png"),
+                        url("../../img/iphone-grey.png");
+    }
+
+    &--pink::before {
+      background-image: url("../../img/advantages-shadow.png"),
+                        url("../../img/iphone-pink.png");
+    }
+
+    &--smile::before {
+      background-image: url("../../img/advantages-shadow.png"),
+                        url("../../img/iphone-smile-desktop.png");
+    }
+  }
+
+  .advantages__title {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .advantages__item:nth-child(3) .advantages__title {
+      padding: 0 30px;
+  }
+
+  .advantages__description {
+    text-align: center;
+    padding: 0 45px;
+  }
+
+  .advantages__description br:nth-child(3) {
+    display: none;
+  }
+}

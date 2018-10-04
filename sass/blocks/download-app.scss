@@ -1,15 +1,22 @@
 .download-app {
   box-sizing: border-box;
-  padding: 0 20px;
+
   margin-top: -65px;
-  padding-top: 488px;
-  padding-bottom: 35px;
+
   background-color: #1d2631;
-  background-image: url("../../img/iphone-mobile.png"),
-                    url("../../img/bg-mobile.jpg");
+  background-image: url("../../img/bg-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 0 145px, 0 0;
-  background-size: auto, 100% 460px;
+  background-position: 0 0;
+  background-size: 100% 460px;
+}
+
+.download-app__wrapper {
+  background-image: url("../../img/iphone-mobile.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 145px;
+  padding-top: 488px;
+  padding-bottom: 25px;
 }
 
 .download-app__title {
@@ -96,14 +103,20 @@
 @media(min-width: $media-tablet-widths) {
   .download-app {
     margin-top: -110px;
-    padding-top: 207px;
-    padding-bottom: 110px;
-
-    background-image: url("../../img/iphone-tablet.png"),
-                      url("../../img/bg-tablet.jpg");
+    background-image: url("../../img/bg-tablet.jpg");
     background-color: transparent;
-    background-size: auto, 100% 750px;
-    background-position: 40% 185px, 0 0;
+    background-size: 100% 750px;
+    background-position: 0 0;
+  }
+
+  .download-app__wrapper {
+    background-image: url("../../img/iphone-tablet.png");
+    background-size: auto;
+    background-position: 40% 195px,;
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 210px;
+    padding-bottom: 110px;
   }
 
   .download-app__title {
@@ -128,7 +141,7 @@
   }
 
   .download-app__description {
-    width: 48%;
+    width: 49%;
     font-family: OpenSansLight, Arial, sans-serif;
     font-weight: 300;
     text-align: center;
@@ -143,21 +156,26 @@
 
 @media(min-width: $media-desktop-widths) {
   .download-app {
-    padding-top: 220px;
-    padding-bottom: 125px;
     padding-left: 5%;
 
+    background-image: url("../../img/bg-desktop.jpg");
+    background-size: 100% 855px;
+    background-position: 0 0;
+  }
 
-    background-image: url("../../img/iphone-desktop.png"),
-                      url("../../img/bg-desktop.jpg");
-    background-size: auto, 100% 855px;
-    background-position: 115px 210px, 0 0;
+  .download-app__wrapper {
+    width: 940px;
+    background-image: url("../../img/iphone-desktop.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 210px;
+    padding-bottom: 135px;
   }
 
   .download-app__title {
     font-size: 50px;
     line-height: 60px;
-    padding-right: 200px;
+    padding-right: 140px;
     padding-left: 45px;
     margin-bottom: 50px;
   }
