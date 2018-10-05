@@ -120,7 +120,7 @@
           <span class="reviews__author-descr">25 лет, водитель трамвая</span>
         </blockquote>
 
-        <div class="slider-controls">
+        <div class="slider-controls reviews__controls">
           <label for="reviews__toggle-1"></label>
           <label for="reviews__toggle-2"></label>
           <label for="reviews__toggle-3"></label>
@@ -129,6 +129,65 @@
         <button class="reviews__next" type="button"></button>
       </section>
 
+    </section>
+
+    <section class="price">
+
+      <input type="radio" id="price__toggle-1" name="price__toggle" class="visually-hidden">
+      <input type="radio" id="price__toggle-2" name="price__toggle" class="visually-hidden" checked>
+      <input type="radio" id="price__toggle-3" name="price__toggle" class="visually-hidden">
+
+      <section class="price__wrapper">
+
+        <table class="price__table">
+
+          <thead>
+            <tr>
+              <th class="price__mock"></th>
+              <th class="price__title">База <br><span class="price__light">1,99 USD</span></th>
+              <th class="price__title price__title--hit">Стандарт <br><span class="price__light">3,99 USD</span></th>
+              <th class="price__title">Анлим <br><span class="price__light">9,99 USD</span></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="price__features">Розовый фильтр</td>
+              <td class="price__mobile price__check--yes">Розовый фильтр</td>
+              <td class="price__mobile price__check--yes">Розовый фильтр</td>
+              <td class="price__mobile price__check--yes">Розовый фильтр</td>
+              <td class="price__check price__check--yes"></td>
+              <td class="price__check price__check--yes"></td>
+              <td class="price__check price__check--yes"></td>
+            </tr>
+            <tr>
+              <td class="price__features">Смайлики</td>
+              <td class="price__mobile price__check--no">Смайлики</td>
+              <td class="price__mobile price__check--yes">Смайлики</td>
+              <td class="price__mobile price__check--yes">Смайлики</td>
+              <td class="price__check price__check--no"></td>
+              <td class="price__check price__check--yes"></td>
+              <td class="price__check price__check--yes"></td>
+            </tr>
+            <tr>
+              <td class="price__features">Комментарии</td>
+              <td class="price__mobile price__check--no">Комментарии</td>
+              <td class="price__mobile price__check--no">Комментарии</td>
+              <td class="price__mobile price__check--yes">Комментарии</td>
+              <td class="price__check price__check--no"></td>
+              <td class="price__check price__check--no"></td>
+              <td class="price__check price__check--yes"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="slider-controls price__controls">
+            <label for="price__toggle-1"></label>
+            <label for="price__toggle-2"></label>
+            <label for="price__toggle-3"></label>
+        </div>
+
+      </section>
     </section>
 
   </main>
