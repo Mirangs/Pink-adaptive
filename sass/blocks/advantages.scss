@@ -3,7 +3,7 @@
   padding-top: 50px;
   padding-bottom: 320px;
 
-  background-image: url("../../img/iphone-smile-mobile.png");
+  background-image: url("../img/iphone-smile-mobile.png");
   background-repeat: no-repeat;
   background-position: 50% 475px;
 }
@@ -71,7 +71,7 @@
       top: -55px;
       width: 268px;
       height: 483px;
-      background-image: url("../../img/iphone-smile-tablet.png");
+      background-image: url("../img/iphone-smile-tablet.png");
       background-position: 0 0;
       background-repeat: no-repeat;
 
@@ -145,18 +145,18 @@
     }
 
     &--grey::before {
-      background-image: url("../../img/advantages-shadow.png"),
-                        url("../../img/iphone-grey.png");
+      background-image: url("../img/advantages-shadow.png"),
+                        url("../img/iphone-grey.png");
     }
 
     &--pink::before {
-      background-image: url("../../img/advantages-shadow.png"),
-                        url("../../img/iphone-pink.png");
+      background-image: url("../img/advantages-shadow.png"),
+                        url("../img/iphone-pink.png");
     }
 
     &--smile::before {
-      background-image: url("../../img/advantages-shadow.png"),
-                        url("../../img/iphone-smile-desktop.png");
+      background-image: url("../img/advantages-shadow.png"),
+                        url("../img/iphone-smile-desktop.png");
     }
   }
 

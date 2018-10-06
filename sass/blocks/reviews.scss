@@ -100,7 +100,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url("../../img/icon-quotes.svg");
+    background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-size: 79px 63px;
     background-position: 50% 50px;
@@ -134,11 +134,11 @@
 
   .reviews__prev {
     order: -1;
-    background-image: url("../../img/icon-left-arrow.svg");
+    background-image: url("../img/icon-left-arrow.svg");
   }
 
   .reviews__next {
-    background-image: url("../../img/icon-left-arrow.svg");
+    background-image: url("../img/icon-left-arrow.svg");
     transform: rotate(180deg);
   }
 

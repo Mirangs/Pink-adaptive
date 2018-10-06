@@ -4,14 +4,14 @@
   margin-top: -65px;
 
   background-color: #1d2631;
-  background-image: url("../../img/bg-mobile.jpg");
+  background-image: url("../img/bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100% 460px;
 }
 
 .download-app__wrapper {
-  background-image: url("../../img/iphone-mobile.png");
+  background-image: url("../img/iphone-mobile.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 0 145px;
@@ -74,21 +74,21 @@
 .download-app__apple {
   width: 47px;
   height: 56px;
-  background-image: url("../../img/icon-apple.svg");
+  background-image: url("../img/icon-apple.svg");
   background-repeat: no-repeat;
 }
 
 .download-app__android {
   width: 43px;
   height: 47px;
-  background-image: url("../../img/icon-android.svg");
+  background-image: url("../img/icon-android.svg");
   background-repeat: no-repeat;
 }
 
 .download-app__microsoft {
   width: 44px;
   height: 41px;
-  background-image: url("../../img/icon-microsoft.svg");
+  background-image: url("../img/icon-microsoft.svg");
   background-repeat: no-repeat;
 }
 
@@ -104,14 +104,14 @@
 @media(min-width: $media-tablet-widths) {
   .download-app {
     margin-top: -110px;
-    background-image: url("../../img/bg-tablet.jpg");
+    background-image: url("../img/bg-tablet.jpg");
     background-color: transparent;
     background-size: 100% 750px;
     background-position: 0 0;
   }
 
   .download-app__wrapper {
-    background-image: url("../../img/iphone-tablet.png");
+    background-image: url("../img/iphone-tablet.png");
     background-size: auto;
     background-position: 40% 195px,;
     width: 620px;
@@ -159,14 +159,14 @@
   .download-app {
     padding-left: 5%;
 
-    background-image: url("../../img/bg-desktop.jpg");
+    background-image: url("../img/bg-desktop.jpg");
     background-size: 100% 855px;
     background-position: 0 0;
   }
 
   .download-app__wrapper {
     width: 940px;
-    background-image: url("../../img/iphone-desktop.png");
+    background-image: url("../img/iphone-desktop.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 0 210px;
