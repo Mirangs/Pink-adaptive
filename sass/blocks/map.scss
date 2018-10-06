@@ -1,0 +1,42 @@
+.map {
+  iframe {
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    max-width: 100%;
+    border-right: calc(50vw - 9px) solid transparent;
+    border-top: 35px solid #fff;
+    border-left: calc(50vw - 9px) solid transparent;
+  }
+}
+
+@media (min-width: $media-tablet-widths) {
+  .map {
+    iframe {
+      height: 380px;
+    }
+
+    &::before {
+      border-top-width: 70px;
+    }
+  }
+}
+
+@media (min-width: $media-desktop-widths) {
+  .map {
+    iframe {
+      height: 505px;
+    }
+
+    &::before {
+      border-top-width: 105px;
+    }
+  }
+}

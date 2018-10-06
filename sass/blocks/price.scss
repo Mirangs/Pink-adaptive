@@ -64,12 +64,11 @@
     }
 
     .price__features,
-    .price__check,
-    .price__mock {
+    .price__features-header {
       display: none;
     }
 
-    .price__mobile {
+    .price__check {
       background-repeat: no-repeat;
       background-position: 90% 50%;
     }
@@ -108,10 +107,6 @@
 
 @media (min-width: $media-tablet-widths) {
   .price__controls {
-    display: none;
-  }
-
-  .price__mobile {
     display: none;
   }
 
@@ -177,11 +172,6 @@
       padding: 17px;
     }
 
-    .price__mobile {
-      background-repeat: no-repeat;
-      background-position: 90% 50%;
-    }
-
     .price__check--yes {
       background-image: url("../../img/icon-yes.svg");
       background-size: 31px 21px;
@@ -194,7 +184,7 @@
 
     .price__check {
       font-family: OpenSans;
-      font-size: 14px;
+      font-size: 0;
       line-height: 30px;
       background-repeat: no-repeat;
       background-position: 50% 50%;

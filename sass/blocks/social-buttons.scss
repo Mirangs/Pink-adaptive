@@ -1,0 +1,52 @@
+@media (min-width: 660px) {
+  .social-buttons {
+    width: 180px;
+
+    .social-buttons__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .social-buttons__item {
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+
+      &--twitter {
+          background-image: url("../../img/icon-twitter.svg");
+          background-size: 18px 14px;
+      }
+
+      &--facebook {
+          background-image: url("../../img/icon-facebook.svg");
+          background-size: 9px 18px;
+      }
+
+      &--youtube {
+          background-image: url("../../img/icon-youtube.svg");
+          background-size: 15px 13px;
+          background-position: 55% 50%;
+      }
+
+      a {
+        display: block;
+        font-size: 0;
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(40, 54, 69, 0.1);
+        border-radius: 50%;
+
+        &:hover {
+          border-color: rgba(40, 54, 69, 1);
+        }
+
+        &:active {
+          opacity: 0.1;
+        }
+      }
+    }
+  }
+}

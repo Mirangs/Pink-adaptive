@@ -143,7 +143,7 @@
 
           <thead>
             <tr>
-              <th class="price__mock"></th>
+              <th class="price__features-header"></th>
               <th class="price__title">База <br><span class="price__light">1,99 USD</span></th>
               <th class="price__title price__title--hit">Стандарт <br><span class="price__light">3,99 USD</span></th>
               <th class="price__title">Анлим <br><span class="price__light">9,99 USD</span></th>
@@ -153,30 +153,21 @@
           <tbody>
             <tr>
               <td class="price__features">Розовый фильтр</td>
-              <td class="price__mobile price__check--yes">Розовый фильтр</td>
-              <td class="price__mobile price__check--yes">Розовый фильтр</td>
-              <td class="price__mobile price__check--yes">Розовый фильтр</td>
-              <td class="price__check price__check--yes"></td>
-              <td class="price__check price__check--yes"></td>
-              <td class="price__check price__check--yes"></td>
+              <td class="price__check price__check--yes">Розовый фильтр</td>
+              <td class="price__check price__check--yes">Розовый фильтр</td>
+              <td class="price__check price__check--yes">Розовый фильтр</td>
             </tr>
             <tr>
               <td class="price__features">Смайлики</td>
-              <td class="price__mobile price__check--no">Смайлики</td>
-              <td class="price__mobile price__check--yes">Смайлики</td>
-              <td class="price__mobile price__check--yes">Смайлики</td>
-              <td class="price__check price__check--no"></td>
-              <td class="price__check price__check--yes"></td>
-              <td class="price__check price__check--yes"></td>
+              <td class="price__check price__check--no">Смайлики</td>
+              <td class="price__check price__check--yes">Смайлики</td>
+              <td class="price__check price__check--yes">Смайлики</td>
             </tr>
             <tr>
               <td class="price__features">Комментарии</td>
-              <td class="price__mobile price__check--no">Комментарии</td>
-              <td class="price__mobile price__check--no">Комментарии</td>
-              <td class="price__mobile price__check--yes">Комментарии</td>
-              <td class="price__check price__check--no"></td>
-              <td class="price__check price__check--no"></td>
-              <td class="price__check price__check--yes"></td>
+              <td class="price__check price__check--no">Комментарии</td>
+              <td class="price__check price__check--no">Комментарии</td>
+              <td class="price__check price__check--yes">Комментарии</td>
             </tr>
           </tbody>
         </table>
@@ -190,7 +181,61 @@
       </section>
     </section>
 
+    <section class="contact-us">
+      <div class="contact-us__wrapper">
+        <h2 class="contact-us__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <ul class="contact-us__list">
+          <li class="contact-us__item">
+            <b>Звоните</b>
+            <a href="tel: +78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contact-us__item">
+            <b>Пишите</b>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contact-us__item">
+            <b>Приезжайте в гости</b>
+            <a href="https://goo.gl/maps/E9bNShaGtVk">ул. Большая Конюшенная, 19/8</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.32085871617607!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1538817312546" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
   </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <picture>
+          <source srcset="img/logo-desktop-footer.svg" media="(min-width: 960px)">
+          <img src="img/logo-tablet-footer.svg" alt="Логотип Pink">
+        </picture>
+      </div>
+
+      <section class="social-buttons">
+        <ul class="social-buttons__list">
+          <li class="social-buttons__item social-buttons__item--twitter">
+            <a href="#">Мы в Твиттере</a>
+          </li>
+          <li class="social-buttons__item social-buttons__item--facebook">
+            <a href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social-buttons__item social-buttons__item--youtube">
+            <a href="#">Мы в Youtube</a>
+          </li>
+        </ul>
+      </section>
+
+      <p class="page-footer__copyright">Разработано
+        <a href="#">HTML Academy</a>
+      </p>
+    </div>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
