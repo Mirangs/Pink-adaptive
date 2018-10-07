@@ -49,8 +49,8 @@
 @media(min-width: $media-desktop-widths) {
   .main-nav {
     display: block;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .main-nav__list {

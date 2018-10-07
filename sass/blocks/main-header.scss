@@ -99,6 +99,10 @@
 }
 
 @media(min-width: $media-tablet-widths) {
+  .main-header__wrapper {
+    padding-top: 8px;
+  }
+
   .main-header__container {
     width: 620px;
     padding-bottom: 40px;
@@ -112,16 +116,21 @@
 
 @media(min-width: $media-desktop-widths) {
   .main-header__wrapper {
+    width: 960px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    @include container-fluid();
+    padding-top: 0;
+    padding-bottom: 30px;
+    padding-top: 25px;
   }
 
   .main-header__container {
     width: 150px;
     margin: 0;
-    padding-top: 27px;
+    padding-top: 7px;
     padding-left: 9px;
+    padding-bottom: 0;
   }
 
   .page-header__toggle {

@@ -7,8 +7,8 @@
   .price__wrapper {
     width: 280px;
     margin: 0 auto;
-    padding-top: 90px;
-    padding-bottom: 45px;
+    padding-top: 92px;
+    padding-bottom: 48px;
   }
 
   .price__table {
@@ -25,22 +25,28 @@
       position: relative;
       color: #ffffff;
       font-family: OpenSansBold, Arial, sans-serif;
+      text-transform: uppercase;
       font-size: 18px;
       line-height: 30px;
       text-align: center;
-      padding: 20px 25px;
+      padding-top: 16px;
+      padding-right: 25px;
+      padding-left: 35px;
+      padding-bottom: 20px;
+      border: 2px solid #e5e5e5;
+      border-bottom-color: #ffffff;
 
       &--hit::before {
         content: "Хит";
         display: block;
         position: absolute;
-        top: 10px;
-        left: -27px;
+        top: 12px;
+        left: -29px;
         transform: rotate(-45deg);
         color: #ffffff;
         background-color: #d22856;
         width: 104px;
-        height: 30px;
+        height: 29px;
         font-family: OpenSans, Arial, sans-serif;
         font-size: 14px;
         line-height: 30px;
@@ -48,10 +54,12 @@
     }
 
     .price__light {
+      display: block;
       font-family: OpenSansLight;
       font-weight: 300;
       font-size: 24px;
       line-height: 30px;
+      margin-left: -7px;
     }
 
     td {
@@ -60,7 +68,12 @@
       text-transform: uppercase;
       box-sizing: border-box;
       width: 280px;
-      padding: 25px 70px 23px 22px;
+      padding: 12px 70px 11px 22px;
+      background-color: #ffffff;
+
+      &:last-child {
+        padding: 18px 70px 16px 22px;
+      }
     }
 
     .price__features,
@@ -70,7 +83,7 @@
 
     .price__check {
       background-repeat: no-repeat;
-      background-position: 90% 50%;
+      background-position: 93% 50%;
     }
 
     .price__check--yes {
@@ -127,16 +140,19 @@
 
     .price__title {
       background-color: #283645;
-      border: 2px solid #e5e5e5;
       overflow: hidden;
       position: relative;
       color: #ffffff;
       font-family: OpenSansBold, Arial, sans-serif;
       text-transform: uppercase;
+      border: 2px solid #e5e5e5;
+      border-bottom-color: #ffffff;
       font-size: 16px;
       line-height: 30px;
       text-align: center;
-      padding: 15px 20px;
+      padding-top: 12px;
+      padding-left: 10px;
+      padding-bottom: 5px;
 
       &--hit::before {
         content: "Хит";
@@ -169,7 +185,7 @@
       text-transform: uppercase;
       box-sizing: border-box;
       width: 153px;
-      padding: 17px;
+      padding: 14px;
     }
 
     .price__check--yes {
@@ -192,7 +208,8 @@
     }
 
     .price__features {
-      padding-top: 9px;
+      padding-top: 4px;
+      padding-left: 15px;
       padding-right: 0;
       padding-bottom: 10px;
       font-size: 14px;
@@ -205,13 +222,39 @@
 @media (min-width: $media-desktop-widths) {
   .price__wrapper {
     width: 940px;
-    padding-top: 140px;
+    padding-top: 153px;
+    padding-bottom: 100px;
   }
 
   .price__table {
+    .price__title {
+      padding-top: 16px;
+      padding-left: 7px;
+      padding-bottom: 20px;
+      font-size: 18px;
+      line-height: 30px;
+
+      &--hit::before {
+        top: 10px;
+        left: -28px;
+        width: 107px;
+      }
+    }
+
+    td {
+      padding-top: 15px;
+    }
+
+    .price__light {
+      font-size: 24px;
+      line-height: 30px;
+    }
 
     .price__features {
-    font-size: 18px;
-  }
+      font-size: 18px;
+      padding-top: 12px;
+      padding-left: 20px;
+      padding-bottom: 15px;
+    }
   }
 }

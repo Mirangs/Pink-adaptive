@@ -1,7 +1,7 @@
 .offer-slogan {
   background-color: #ffffff;
   padding-top: 40px;
-  padding-bottom: 70px;
+  padding-bottom: 63px;
   position: relative;
 
   &::after {
@@ -25,23 +25,23 @@
   padding: 0 23%;
 
   &--1 {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 }
 
 @media (min-width: $media-tablet-widths) {
   .offer-slogan {
     padding-top: 50px;
-    padding-bottom: 95px;
+    padding-bottom: 102px;
   }
 
   .offer-slogan__title {
     padding: 0;
     font-size: 40px;
-    line-height: 50px;
+    line-height: 45px;
 
     &--1 {
-      margin-bottom: 0;
+      margin-bottom: 5px;
     }
 
     &--2 {
@@ -52,14 +52,19 @@
 
 @media (min-width: $media-desktop-widths) {
   .offer-slogan {
-    padding-top: 69px;
+    padding-top: 50px;
     padding-right: 36px;
-    padding-bottom: 165px;
+    padding-bottom: 175px;
   }
 
   .offer-slogan__title {
     font-size: 50px;
-    line-height: 60px;
+    line-height: 59px;
+    margin-left: 35px;
+
+    &--1 {
+      margin-bottom: 0;
+    }
 
     &--2 {
       padding: 0 125px;
