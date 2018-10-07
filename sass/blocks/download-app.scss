@@ -7,17 +7,17 @@
   background-image: url("../../img/bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 100% 460px;
+  background-size: 100% 461px;
 }
 
 .download-app__wrapper {
   background-image: url("../../img/iphone-mobile.png");
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position: 0 145px;
+  background-size: 320px 286px;
+  background-position: 0 175px;
   padding: 0 20px;
-  padding-top: 488px;
-  padding-bottom: 25px;
+  padding-top: 489px;
+  padding-bottom: 28px;
 }
 
 .download-app__title {
@@ -36,7 +36,7 @@
   font-size: 18px;
   text-align: center;
   border: 3px solid #ffffff;
-  border-radius: 25px;
+  border-radius: 35px;
 
   transition: all 0.3s ease;
 
@@ -59,7 +59,7 @@
 
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .download-app__link {
@@ -81,6 +81,7 @@
 .download-app__android {
   width: 43px;
   height: 47px;
+  margin-top: 8px;
   background-image: url("../../img/icon-android.svg");
   background-repeat: no-repeat;
 }
@@ -88,6 +89,7 @@
 .download-app__microsoft {
   width: 44px;
   height: 41px;
+  margin-top: 13px;
   background-image: url("../../img/icon-microsoft.svg");
   background-repeat: no-repeat;
 }
@@ -113,11 +115,11 @@
   .download-app__wrapper {
     background-image: url("../../img/iphone-tablet.png");
     background-size: auto;
-    background-position: 40% 195px,;
+    background-position: 40% 187px;
     width: 620px;
     margin: 0 auto;
-    padding-top: 210px;
-    padding-bottom: 110px;
+    padding-top: 203px;
+    padding-bottom: 108px;
   }
 
   .download-app__title {
@@ -139,6 +141,28 @@
     width: 48%;
     margin: 0;
     margin-bottom: 37px;
+    justify-content: flex-start;
+  }
+
+  .download-app__item {
+    &:first-child {
+      margin-right: 60px;
+    }
+
+    &:nth-child(2) {
+        margin-right: 36px;
+      }
+    }
+
+  .download-app__apple {
+    margin-left: 32px;
+    margin-right: 50px;
+  }
+
+  .download-app__android {
+    margin-left: -25px;
+    margin-top: 5px;
+    margin-right: 10px;
   }
 
   .download-app__description {
@@ -157,7 +181,7 @@
 
 @media(min-width: $media-desktop-widths) {
   .download-app {
-    padding-left: 5%;
+    padding-left: 0px;
 
     background-image: url("../../img/bg-desktop.jpg");
     background-size: 100% 855px;
@@ -169,21 +193,22 @@
     background-image: url("../../img/iphone-desktop.png");
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: 0 210px;
+    background-position: 45px 210px;
+    padding-top: 225px;
     padding-bottom: 135px;
+    padding-left: 40px;
   }
 
   .download-app__title {
     font-size: 50px;
     line-height: 60px;
-    padding-right: 140px;
-    padding-left: 45px;
+    padding-right: 170px;
+    padding-left: 0;
     margin-bottom: 50px;
   }
 
   .download-app__btn {
     width: 30%;
-    margin-left: 15px;
     margin-bottom: 70px;
   }
 
